@@ -1,2 +1,2 @@
 # az-ad-app-integration
-Notes on trying out the different options for application authentication scenarios with Azure AD using a Postman Tool
+Notes on trying out the different scenarios for application authentication with Azure AD using a Postman Tool
