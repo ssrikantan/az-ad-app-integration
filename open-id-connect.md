@@ -33,7 +33,7 @@ The following info needs to be shared with the calling Application to make the s
 - The oAuth Token endpoint to get the auth code after user sign in, and use the auth code to get an access token from the oAuth authorize endpoint that would be used by the calling Application to call the API.
 
 ### 4. Using the Postman tool (calling Application) to get an auth code & access token
-Use the Postman tool's ability to 'Request Token'. See below. The authorize token URL contains the App ID of the secure REST API, and an 'auth code' returned for this App ID after prompting the user to sign in. After successful sign in, the Postman tool sends a request to the auth token end point, passing the 'auth code' retrieved in the previous step, to obtain an 'auth token'. Click on 'Use token' to embed that in the request to the REST API.
+Use the Postman tool's ability to 'Request Token'. See below. The authorize token URL contains the App ID of the secure REST API, and an 'auth code' returned for this App ID after prompting the user to sign in. After successful sign in, the Postman tool sends a request to the auth token end point, passing the 'auth code' retrieved in the previous step, to obtain an 'auth token'. Click on 'Use token' to embed that in the request to the REST API. (This step returns an auth token, ID token and a Refresh Token)
 
 ![GitHub Logo](/images/accesstoken2.png)
 
@@ -42,4 +42,8 @@ Use the access token returned above as a 'bearer token' to invoke the API. See b
 
 ![GitHub Logo](/images/callsecureapi2.png)
 
-## 6. 
+## 6. Using the refresh token to obtain a new auth token
+When the auth token issued earlier expires, the user would be prompted to sign in again when trying to call the API. To avoid this, the refresh token could be used to get a new auth token, from the oAuth token end point. See below
+
+
+![GitHub Logo](/images/refreshtoken.png)
