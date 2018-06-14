@@ -20,9 +20,12 @@ The redirect URL in the Application Registration is set to the Postman Client ca
 ![GitHub Logo](/images/redirecturl.png)
 
 ## 3. Using the Postman tool to obtain an access token from the Azure AD authorization end point
-In the Postman tool, select the 'authorization option' to oAuth 2.0 and click on the 'Get new Access Token' button. In the dialog that comes up, select the 'Implicit' grant option. Note that, unlike with the Open ID Connect scenario that had both the AZure AD authorization end point and the token endpoint, here , only the Azure AD Authorization end point requires to be specified. See below:
+In the Postman tool, select the 'authorization option' to oAuth 2.0 and click on the 'Get new Access Token' button. In the dialog that comes up, select the 'Implicit' grant option. Note that, unlike with the Open ID Connect scenario that had both the AZure AD authorization end point and the token endpoint, here , only the Azure AD Authorization end point requires to be specified. 
+
 **Ensure that the 'Client Authentication' option on this dialog is set to 'Send as Basic Auth Header'**
+
 (Note that the auth endpoint URL contains the App ID of the secure Web API)
+See below:
 
 ![GitHub Logo](/images/implicitgrant.png)
 
