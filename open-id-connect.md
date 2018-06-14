@@ -1,6 +1,6 @@
 # Open Id Connect - Application authentication scenario 
 
-An Application needs to invoke a REST API that is protected using Azure AD, using Open ID Connect. In this sample, the user context is passed to the secure API, which parses the JWT Token to retrieve the user name and returns that in the API response to the calling application.
+A Web Application needs to invoke a REST API that is protected using Azure AD, using Open ID Connect. In this sample, the user context is passed to the secure API, which parses the JWT Token to retrieve the user name and returns that in the API response to the calling application.
 
 (About Open ID Connect - here - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios and https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-openid-connect-code is used in this scenario) 
 
