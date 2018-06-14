@@ -2,7 +2,7 @@
 
 This applies to a scenario where A Javascript/Single Page Application (SPA) needs to invoke a REST API that is protected using Azure AD. 
 
-In the oAuth authorization code grant scenario covered in another article page in this repo, the Client Web Application calls the Azure AD Authorization end point to sign in the user, get an access code and redirects directly to the Azure AD Token end point to get the access token. The Client Web Application then  uses this access token to call the REST API.
+In the oAuth authorization code grant scenario that is covered in another article page in this repo, the Client Web Application calls the Azure AD Authorization end point to sign in the user, get an access code and redirects directly to the Azure AD Token end point to get the access token. The Client Web Application then  uses this access token to call the REST API.
 
 In the case of Implicit grant scenario that is applicable to an SPA, such a two step process with redirection is not possible, since it has to be executed from the browser directly with the Azure AD end point. Instead, the SPA Application calls only the Azure AD authorization endpoint, signs in the user and gets the access token directly (without the intermediate step involving getting the access code)
 
