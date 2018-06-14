@@ -1,6 +1,6 @@
 ## Using Client credentials grant - Application authentication
 
-A daemon or Server Application needs to invoke a REST API that is protected using Azure AD. There is no user interaction possible for the daemon application which has to have an Application Identity to gain access to the API. oAuth 2.0 Client credentials grant, as described here - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios is used in this scenario. Refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications to understand how to register Applications in Azure AD.
+A daemon or Service Application needs to invoke a REST API that is protected using Azure AD. There is no user interaction possible for the daemon application which has to have an Application Identity to gain access to the API. oAuth 2.0 Client credentials grant, as described here - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios is used in this scenario. Refer to https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications to understand how to register Applications in Azure AD.
 
 ### 1. Creating the REST API that is protected using Azure AD
 An ASP.NET 2.0 Core Web API Project is created using Visual Studio 2017. This Project Template provides a turnkey integration with Azure AD. 
