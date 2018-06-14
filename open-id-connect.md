@@ -25,6 +25,10 @@ Configure the Client Web App to have access to the Web API registered earlier. E
 
 Generate a Key for the App that would be embedded in the calling Application (Postman Tool in this case), from the Settings>API Access>keys section in the Azure Portal for the Client App registered.
 
+Set the redirect URL to point to the Postman Client URL. See below
+
+![GitHub Logo](/images/redirecturl.png)
+
 Obtain the oAuth Token endpoint URL that would be shared with the Calling Application to obtain the access tokens from. See below
 
 ![GitHub Logo](/images/tokenendpoint2.png)
