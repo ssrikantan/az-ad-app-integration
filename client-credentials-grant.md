@@ -15,7 +15,7 @@ The manifest is edited (see above)to add Application Roles that could be used by
 
 ### 3. Registering the daemon or the calling Application with Azure AD
 Create a Registration for the calling Application in Azure AD. This Application could be external to and running outside of Azure.
-Configure the Client Web App to have access to the Web API registered earlier. (Note that the 'delegated permission' is not checked. Only the Application permission is selected (refer to the changes made to the manifest file of the Web API in the previous step). See below
+Configure the Client Web App to have access to the Web API registered earlier. (Note that the 'delegated permission' is not checked. Only the Application permission is selected (refer to the changes made to the manifest file of the Web API in the previous step). Click on 'Grant access' after setting the permissions. See below
 
 ![GitHub Logo](/images/clientappregn.png)
 
