@@ -34,6 +34,7 @@ Clicking on 'Request Token' button takes the user to the Sign in page. On comple
 See below
 ![GitHub Logo](/images/accesstoken4.png)
 
-## 4. Use the access token returned above as a 'bearer token' to invoke the API. See below. The REST API has parsed the access/JWT Token to retrieve the user name and returned that in the response
+## 4. Use the access token returned above as a 'bearer token' to invoke the API
+See below. The REST API has parsed the access/JWT Token to retrieve the user name and returned that in the response
 
 ![GitHub Logo](/images/callsecureapi2.png)
