@@ -27,7 +27,7 @@ In the Postman tool, select the 'authorization option' to oAuth 2.0 and click on
 (Note that the auth endpoint URL contains the App ID of the secure Web API)
 See below:
 
-![GitHub Logo](/images/implicitgrant.png)
+![GitHub Logo](/images/implicitgrant1.png)
 
 Clicking on 'Request Token' button takes the user to the Sign in page. On completion, the access Token is received. Unlike with the Open ID Connect Flow, there are no ID Tokens or Refresh Tokens returned.
 
