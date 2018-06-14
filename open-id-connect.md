@@ -10,7 +10,7 @@ An ASP.NET 2.0 Core Web API Project is created using Visual Studio 2017. This Pr
 
 This Project Template also registers this Web API Project with Azure AD and populates the appsettings.json as shown below.
 
-### 2. Editing the Application Manifest to add Application Roles
+### 2. Editing the Application Manifest to enable oAuth implicit flow
 Edit the manifest of the Application registration above, to allow oAuth 2.0 implicit flow. This is 'false' by default. See below
 
 ![GitHub Logo](/images/appregistration2.png)
@@ -33,7 +33,7 @@ The following info needs to be shared with the calling Application to make the s
 - The oAuth Token endpoint to get the auth code after user sign in, and use the auth code to get an access token from the oAuth authorize endpoint that would be used by the calling Application to call the API.
 
 ### 4. Using the Postman tool (calling Application) to get an auth code & access token
-Use the Postman tool's ability to 'Request Token'. See below. The authorize token URL contains the App ID of the secure REST API, and an 'auth code' returned for this App ID after prompting the user to sign in. After successful sign in, the Postman tool sends a request to the auth token end point, passing the 'auth code' retrieved in the previous step, to obtain an 'auth token'. Click on 'Use token' to embed that in the request to the REST API
+Use the Postman tool's ability to 'Request Token'. See below. The authorize token URL contains the App ID of the secure REST API, and an 'auth code' returned for this App ID after prompting the user to sign in. After successful sign in, the Postman tool sends a request to the auth token end point, passing the 'auth code' retrieved in the previous step, to obtain an 'auth token'. Click on 'Use token' to embed that in the request to the REST API.
 
 ![GitHub Logo](/images/accesstoken2.png)
 
@@ -41,3 +41,5 @@ Use the Postman tool's ability to 'Request Token'. See below. The authorize toke
 Use the access token returned above as a 'bearer token' to invoke the API. See below. The REST API has accepted the auth token in the request, parsed the JWT Token to retrieve the user name and returns that in the response
 
 ![GitHub Logo](/images/callsecureapi2.png)
+
+## 6. 
