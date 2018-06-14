@@ -29,8 +29,9 @@ See below:
 
 ![GitHub Logo](/images/implicitgrant.png)
 
-Clicking on 'Request Token' button takes the user to the Sign in page. On completion, the access Token is received. See below
+Clicking on 'Request Token' button takes the user to the Sign in page. On completion, the access Token is received. Unlike with the Open ID Connect Flow, there are no ID Tokens or Refresh Tokens returned.
 
+See below
 ![GitHub Logo](/images/accesstoken4.png)
 
 ## 4. Use the access token returned above as a 'bearer token' to invoke the API. See below. The REST API has parsed the access/JWT Token to retrieve the user name and returned that in the response
